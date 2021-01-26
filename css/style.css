@@ -11,6 +11,7 @@
   /* cursor: grab; */
 }
 
+/* Styles for the zoom buttons */
 #jvector-map .jvectormap-zoomin,
 #jvector-map .jvectormap-zoomout {
   background-color: #373737;
@@ -24,4 +25,94 @@
 }
 #jvector-map .jvectormap-zoomout {
   top: 45px;
+}
+
+/* Styles for the country tooltips */
+.jvectormap-tip {
+  position: absolute;
+  display: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: #333;
+  font-family: sans-serif, Verdana;
+  font-size: smaller;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding: 0.5em 1em;
+}
+
+/* Country card pop up styling */
+.country-card {
+  padding: 2.5rem 1.5rem;
+  background-color: white;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  text-align: left;
+  box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.country-card .region {
+  text-transform: uppercase;
+  color: #777;
+  font-size: 0.625rem;
+  margin-bottom: 0.3em;
+}
+
+.country-card .name {
+  color: black;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  margin-bottom: 0.65em;
+}
+
+.country-card .desc {
+  color: #777;
+  font-size: 1rem;
+  margin-bottom: 0.85em;
+  max-width: 200px;
+}
+
+.country-card .media {
+  display: flex;
+  flex-flow: column;
+}
+
+.country-card .media li {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  margin-bottom: 1em;
+}
+
+.country-card .media li .icon {
+  margin-right: 1rem;
+  color: red;
+}
+
+.country-card .media li .tag {
+  text-decoration: none;
+  color: #777;
+}
+
+.country-card .read-more {
+  background-color: red;
+  padding: 1.5em 3em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  border-radius: 35px;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.country-card .read-more:hover {
+  background-color: darkred;
 }

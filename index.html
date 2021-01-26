@@ -12,60 +12,37 @@
   </head>
   <body>
     <div id="jvector-map"></div>
-    <script>
-      const countries = {
-        MX: 1,
-        HN: 1,
-        NI: 1,
-        SV: 1,
-        HT: 1,
-        CO: 1,
-        VE: 1,
-        BR: 1,
-        BO: 1,
-        ZA: 1,
-      };
-      const mapConfig = {
-        map: 'world_merc',
-        zoomOnScroll: false,
-        regionsSelectable: true,
-        regionsSelectableOne: true,
-        backgroundColor: 'transparent',
-        regionStyle: {
-          initial: {
-            fill: '#d6d6d6',
-            'fill-opacity': 1,
-            stroke: 'none',
-            'stroke-width': 0,
-            'stroke-opacity': 1,
-          },
-          hover: {
-            'fill-opacity': 1,
-            fill: '#373737',
-            // cursor: 'grab',
-          },
-          selected: {
-            fill: '#373737',
-          },
-        },
-        series: {
-          regions: [
-            {
-              values: {
-                MX: '#ec1d24',
-                HN: '#ec1d24',
-                NI: '#ec1d24',
-                RU: '#ec1d24',
-              },
-              attribute: 'fill',
-            },
-          ],
-        },
-      };
-
-      $(function () {
-        $('#jvector-map').vectorMap(mapConfig);
-      });
-    </script>
+    <div class="country-card">
+      <span class="region"></span>
+      <h5 class="name"></h5>
+      <p class="desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quam
+        reprehenderit eum, tempora officiis, explicabo minima aliquid ex
+        adipisci, animi repellat deserunt ab magnam a?
+      </p>
+      <ul class="media">
+        <li>
+          <span class="icon">tw</span><a href="#" class="tag">@MSF_Mexico</a>
+        </li>
+        <li>
+          <span class="icon">fb</span><a href="#" class="tag">MSF.Mexico</a>
+        </li>
+      </ul>
+      <a href="#" class="read-more">read more</a>
+    </div>
+    <script src="js/map.js"></script>
   </body>
 </html>
+<!-- Requisites -->
+
+<!-- // Styling -->
+<!-- Style zoom buttons - Done -->
+<!-- Style country tooltip - Done -->
+<!-- Style countries - Done -->
+<!-- Style map -->
+<!-- // -->
+
+<!-- // Countries events -->
+<!-- Open a card when clicked -->
+<!-- Close previous card when clicked -->
+<!-- // -->
